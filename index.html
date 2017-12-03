@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Giphy Search</h1>
+		<form id="gif-form">
+	      <label for="reaction">Say what?</label>
+	      <input type="text" id="reaction">
+	      <input id="new-reaction" type="submit" value="Submit">
+	    </form>
+		
+		<h3>Click buttons below to see gifs or enter reaction above to add new button.</h3>
+			
+		<div id="buttons-view"></div>
+		
+
+	  	
+	<!-- Giphs will get dumped here -->
+		<div id="gif-view"></div>
+
+	</div>	    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="giphy.js"></script>
+</body>
+</html>
