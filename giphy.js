@@ -23,7 +23,7 @@ renderButtons();
 $("#buttons-view").on("click", "input", function() {
 	var APIKey = "6aOkv6LRvqkdZ11Si26rObsAGid0vj5H";
 	var searchterm = $(this).val();
-	var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + searchterm + "&api_key=" + APIKey + "&limit=10");
+	var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + searchterm + "&api_key=" + APIKey + "&limit=10");
 	xhr.done(function(response) { 
 		var data = response.data; 
 		$("#gif-view").empty();
